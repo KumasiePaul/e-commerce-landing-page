@@ -1,0 +1,179 @@
+/* === General === */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f8f8;
+}
+
+/* === Navbar === */
+.navbar-product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 1rem 2rem;
+  color: white;
+}
+
+.navbar-product .logo a {
+  color: orange;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar-product .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar-product .nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.navbar-product .nav-links a.active,
+.navbar-product .nav-links a:hover {
+  color: orange;
+}
+
+.navbar-product .search-bar {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.navbar-product .search-bar input {
+  padding: 0.4rem 0.7rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.navbar-product .search-bar button {
+  padding: 0.4rem 0.8rem;
+  background-color: orange;
+  color: #20232a;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* === Layout === */
+.products-container {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* === Sidebar === */
+.sidebar {
+  width: 250px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.sidebar-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.filter-group {
+  margin-bottom: 2rem;
+}
+
+.filter-group h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #444;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+}
+
+.filter-group label {
+  display: block;
+  margin-bottom: 0.6rem;
+  font-size: 0.95rem;
+  color: #555;
+  cursor: pointer;
+  padding-left: 25px;
+  position: relative;
+}
+
+.filter-group input[type="checkbox"] {
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 18px;
+  height: 18px;
+  accent-color: orange;
+  cursor: pointer;
+}
+
+/* === Products Section === */
+.products-content {
+  flex: 1;
+}
+
+.products-content h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #222;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.product-card {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.product-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.product-card h4 {
+  margin: 0.8rem 0 0.5rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+.product-card p {
+  font-size: 1rem;
+  font-weight: bold;
+  color: orange;
+}
+
+.product-card button {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: orange;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+ 
+.product-card:hover {
+    transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.product-card button:hover{
+    background-color: #e67600;
+}
+

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FurniHub | Products</title>
+  <link rel="stylesheet" href="products-style.css" />
+</head>
+<body>
+
+  <!-- ✅ Navbar -->
+  <header>
+    <nav class="navbar-product">
+      <div class="logo"><a href="index.html">FurniHub</a></div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html" class="active">Products</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cart.html">Cart</a></li>
+      </ul>
+      <div class="search-bar">
+        <input type="text" placeholder="Search...">
+        <button type="submit">Search</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ✅ Main Section -->
+  <section class="products-container">
+
+    <!-- Sidebar Filters -->
+    <aside class="sidebar">
+      <h2 class="sidebar-title">Filter Results</h2>
+
+      <div class="filter-group">
+        <h3>Category</h3>
+        <label><input type="checkbox" /> Sofas</label>
+        <label><input type="checkbox" /> Chairs</label>
+        <label><input type="checkbox" /> Beds</label>
+        <label><input type="checkbox" /> Tables</label>
+      </div>
+
+      <div class="filter-group">
+        <h3>Price</h3>
+        <label><input type="checkbox" /> $0 - $100</label>
+        <label><input type="checkbox" /> $100 - $300</label>
+        <label><input type="checkbox" /> $300 - $500</label>
+        <label><input type="checkbox" /> $500+</label>
+      </div>
+
+      <div class="filter-group">
+        <h3>Customer Rating</h3>
+        <label><input type="checkbox" /> ★★★★★ & up</label>
+        <label><input type="checkbox" /> ★★★★ & up</label>
+        <label><input type="checkbox" /> ★★★ & up</label>
+        <label><input type="checkbox" /> ★★ & up</label>
+      </div>
+    </aside>
+
+    <!-- Product Content -->
+    <div class="products-content">
+      <h1>All Products</h1>
+      <div class="products-grid">
+        <div class="product-card">
+          <img src="./assets/images/modern-sofa.jpg" alt="Sofa">
+          <h4>Modern Sofa</h4>
+          <p>$299.99</p>
+          <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+          <img src="./assets/images/luxury-chair.jpg" alt="Chair">
+          <h4>Luxury  Chair</h4>
+          <p>$89.99</p>
+          <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+          <img src="./assets/images/bed.jpg" alt="Bed">
+          <h4>Queen Bed</h4>
+          <p>$399.99</p>
+          <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+          <img src="./assets/images/studio-chair.jpg" alt="Table">
+          <h4>Studior Chair </h4>
+          <p>$249.99</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

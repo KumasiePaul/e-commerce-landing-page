@@ -37,6 +37,7 @@ body {
   list-style: none;
   display: flex;
   gap: 1.5rem;
+  padding: 0;
 }
 
 .nav-links li a {
@@ -455,3 +456,4 @@ body {
   font-size: 0.85rem;
   color: #555;
 }
+
